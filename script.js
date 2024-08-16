@@ -59,6 +59,14 @@ function playGame(){
     for(let i = 0; i < 5; i++){
         playRound();
     }
+
+    if (humanScore > computerScore){
+        console.log("Congratulation! You won.")
+    }else if(humanScore < computerScore){
+        console.log("Oops! You lose, Try again!")
+    }else{
+        console.log("It's a Draw.")
+    }
 }
 
 playGame();
