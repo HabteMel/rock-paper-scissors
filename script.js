@@ -13,6 +13,10 @@ function getComputerChoice(){
     return computerChoice;
 }
 
+
+
+
+
 function getHumanChoice(){
     let humanChoice=prompt("Please enters your choice: ");
     humanChoice = humanChoice.toLowerCase();
@@ -28,6 +32,7 @@ function getHumanChoice(){
             return getHumanChoice();
     }
 }
+
 
 function playGame(){
     let humanScore = 0;
