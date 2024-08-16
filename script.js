@@ -1,19 +1,3 @@
-/*
-Writing the logic to get the computer choice:
-
-    {GET RANDOMIZED CHOICE USING MATH METHOD
-    IF COMPUTERCHOICE IS EQUAL TO 0 :
-        CHOOSE ROCK
-    ELSE
-        CHOOSE PAPER
-    ELSE
-        CHOOSE SCISSORS
-
-    RETURN COMPUTERCHOICE;
-    PRINT COMPUTERCHOICE;
-
-*/
-
 function getComputerChoice(){
     let computerChoice = Math.floor(Math.random() * 3);
     console.log(computerChoice);
@@ -28,17 +12,6 @@ function getComputerChoice(){
     console.log(`Computer Choice: ${computerChoice}`)
     return computerChoice;
 }
-
-
-
-
-/*
-    WRITE THE LOGIC TO GET THE HUMAN CHOICE
-    ASK USER TO ENTER ITS CHOICE
-    MAKE SURE TO CHECK IF THE USER ENTERS VALID RESPONSE
-    DISPLAY WHAT THE USER ENTERS
-
-*/
 
 function getHumanChoice(){
     let humanChoice=prompt("Please enters your choice: ");
@@ -55,19 +28,6 @@ function getHumanChoice(){
             return getHumanChoice();
     }
 }
-
-/*
-    STORE WHAT THE COMPUTER AND HUMAN ENTERS BY MAKING THE DEFAULT 0
- */
-/* WRITE A FUNCTION WHICH TAKES ARGUMENTS TO PLAY A SINGLE ROUND
-* INCREMENT THE WINNERS SCORE 
-* LOGS A WINNER ANNOUNCEMENT
-*
-* PLAYROUND FUNCTION CHECKS WHO WINS THEN PRINT A ROUND WINNER
-*/
-/**
- * WRITE A FOR LOOP WHICH RUNS THE PLAYROUND 5 TIMES TO PLAY 5 ROUNDS
-*/
 
 function playGame(){
     let humanScore = 0;
